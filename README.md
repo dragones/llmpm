@@ -1,7 +1,6 @@
 # llmpm
 
-
-**LLMs for PMs (and other Knowledge Workers)**
+# LLMs for PMs (and other Knowledge Workers)
 
 As product leaders, we are living in the golden age.
 
@@ -24,7 +23,7 @@ PMs need to skill up and get comfortable adding LLMs to your core workflows.  Th
 
 Be a LLM PM. 
 
-**LLMs at the Center**
+## LLMs at the Center
 
 I have spent the last decade of my career at leading product teams at enterprise SaaS companies like Salesforce and SAP SuccessFactors.  
 

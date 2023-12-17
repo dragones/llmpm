@@ -55,14 +55,7 @@ If your organization or vendor does not offer this capability, you can also tran
 
 Apple earlier this month released GPU acceleration support for Whisper for recent vintage M-series MacBooks (github).  Using the Base model, GPU acceleration offered 2X speedup on a 90 minute meeting file (3 mins vs 7 mins transcription time). 
 
-Stats:
-
-Apple M2 Max (12‑core CPU, 30‑core GPU, 16‑core Neural Engine)
-
-64GB system memory
-
-1:33:14 meeting file
-
+Transcription time:
 
 <table>
   <tr>
@@ -128,6 +121,8 @@ Apple M2 Max (12‑core CPU, 30‑core GPU, 16‑core Neural Engine)
    </td>
   </tr>
 </table>
+
+`Apple M2 Max (12‑core CPU, 30‑core GPU, 16‑core Neural Engine), 64GB system memory, 1:33:14 meeting file`
 
 OpenAI also offers a Whisper API endpoint for $0.36/hour. 
 

@@ -11,8 +11,6 @@ As a product leader, an essential tool to the modern PM is LLM skills.  As the n
 
 Ask yourself: what if you had an AI teammate who with full access to your enterprise data that could:
 
-
-
 * Transcribe every meeting
 * Summarize every meeting, document, email, slack thread etc.
 * Search across your digital work life for most relevant context
@@ -134,7 +132,6 @@ Apple M2 Max (12‑core CPU, 30‑core GPU, 16‑core Neural Engine)
   </tr>
 </table>
 
-
 OpenAI also offers a Whisper API endpoint for $0.36/hour. 
 
 **Assembly.AI model**
@@ -162,6 +159,5 @@ Here are example commands (if running LLM locally):
 
 (echo [INST]Please enumerate any actions from this meeting transcript:; cat 6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt | sed 's/   */ /'; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 1000
 ```
-
 
 Note that mistral LLMs require the prompt to be surrounded by “[INST]...[/INST]” text (HuggingFace [docs](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)).

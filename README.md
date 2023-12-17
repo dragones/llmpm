@@ -27,7 +27,7 @@ I have spent the last decade of my career at leading product teams at enterprise
 
 IMO, the day-to-day “toolbelt” of a product leader has not changed much in this time -- Google or Microsoft productivity apps along with email and group messaging apps (Slack or Teams);  long-form content (i.e. customer interviews) in Confluence or Notion; analytics in a Tableau-like tool; with the software JTBDs tracked in Atlassian JIRA, Linear, or similar.  However, LLMs have caused me to rethink how product teams get work done moving forward. 
 
-**Why local LLMs?**
+### Why local LLMs?
 
 [Some are declaring the LLM wars “over”](https://www.theinformation.com/articles/the-next-ai-battle-adding-it-to-existing-products?shared=0e405a3210461d84), but for knowledge workers, increasingly powerful LLMs available on your Mac allows a PM to get all the benefits of ChatGPT without having to worry about sharing enterprise IP to other model providers. 
 
@@ -35,13 +35,13 @@ For example, Mistral has released 2 new models in the last three months that out
 
 You can expect the performance improvements to compound as LLMs compete for mindshare and continue to push the performance envelope for edge devices. 
 
-**How do I get started with local LLMs?**
+### How do I get started with local LLMs?
 
 [Llamafile](https://github.com/Mozilla-Ocho/llamafile) is the easiest way to run an LLM on your Mac or PC with a single file executable.  Includes support for Mistral 7B, Mixtral and LLaVA multi-modal. 
 
 [LM Studio](https://lmstudio.ai/) adds a UI with a chat interface with integrated LLM marketplace.
 
-**Key Use Cases**
+## Key Use Cases
 
 I have been fascinated by the intersection of the emergent capabilities of LLMs and the future of work. What if we pivoted core PM workflows to put a LLM at the center?  For example:
 

@@ -1,5 +1,3 @@
-# llmpm
-
 # LLMs for PMs (and other Knowledge Workers)
 
 As product leaders, we are living in the golden age.

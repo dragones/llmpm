@@ -130,7 +130,7 @@ OpenAI also offers a Whisper API endpoint for $0.36/hour.
 
 Assembly.AI offers a paid API service ($0.65/hour) with higher-level abstractions like summarization, actions, speaker identification, and more - which means you can skip the next section. 
 
-**Summarize & Action Everything**
+### Summarize & Action Everything
 
 Now that you have transcribed everything, LLMs are the essential intelligence layer to summarize and action your meetings. 
 

@@ -45,7 +45,7 @@ You can expect the performance improvements to compound as LLMs compete for mind
 
 I have been fascinated by the intersection of the emergent capabilities of LLMs and the future of work. What if we pivoted core PM workflows to put a LLM at the center?  For example:
 
-**Transcribe Everything**
+### Transcribe Everything
 
 Post-pandemic, most meetings are now recorded and all meeting vendors offer recording downloads.  Many are adding AI transcription and summarization capability (for additional cost).  
 

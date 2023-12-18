@@ -19,7 +19,7 @@ def loadChroma(filename: str) -> Chroma:
     embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
     # load it into Chroma
-    db = Chroma.from_documents(docs, embedding_function)
+    db = Chroma.from_documents(docs, embedding_function, persist_directory="./chroma_db")
     return db
 
 def queryChroma(db: Chroma, query: str) -> list:
@@ -30,7 +30,7 @@ def queryChroma(db: Chroma, query: str) -> list:
 def main():
     parser = argparse.ArgumentParser(description='Embed document, query chromadb')
     parser.add_argument('-f', '--file', type=str, help='The file to embed')
-    parser.add_argument('-q', '--query', type=str, help='query')
+    parser.add_argument('-q', '--query', type=str, help='query', default=None)
     args = parser.parse_args()
 
     # check if file exists
@@ -39,8 +39,9 @@ def main():
         return
 
     db = loadChroma(args.file)
-    docs = queryChroma(db, args.query)
-    print(docs[0].page_content)
+    if(args.query):
+        docs = queryChroma(db, args.query)
+        print(docs[0].page_content)
 
 if __name__ == '__main__':
     main()

@@ -207,11 +207,13 @@ Enterprise vendors like Google & Microsoft are adding semantic search across you
 
 ![Salesforce Retrieval Augmented Generation](/images/salesforce_rag.png)
 
-To take advantage, first you need to chunk the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers. 
+For PMs to take advantage, first you need to chunk the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers. 
 
 **Chroma**
 
-Chroma is a database for building AI applications with embeddings. It comes with everything you need to get started built in, and runs on your machine.
+[Chroma](https://www.trychroma.com/) is a local vector database for building AI applications with embeddings. 
+
+By default, Chroma uses the Sentence Transformers all-MiniLM-L6-v2 model to create embeddings. This embedding model can create sentence and document embeddings that can be used for a wide variety of tasks. This embedding function runs locally on your machine, and may require you download the model files (this will happen automatically).
 
 **OpenAI / Cohere**
 

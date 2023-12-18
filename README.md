@@ -31,7 +31,7 @@ IMO, the day-to-day “toolbelt” of a product leader has not changed much in t
 
 ### Why local LLMs?
 
-[Some are declaring the LLM wars “over”](https://www.theinformation.com/articles/the-next-ai-battle-adding-it-to-existing-products?shared=0e405a3210461d84), but for knowledge workers, increasingly powerful LLMs available on your Mac allows a PM to get all the benefits of ChatGPT without having to worry about sharing enterprise IP to other model providers. 
+[Some are declaring the LLM wars “over”](https://www.theinformation.com/articles/the-next-ai-battle-adding-it-to-existing-products?shared=0e405a3210461d84), but for knowledge workers, increasingly powerful LLMs available on your GPU’d Mac or PC allows a PM to get all the benefits of ChatGPT without having to worry about sharing enterprise IP to other model providers. 
 
 For example, [Mistral](https://mistral.ai/) has released 2 new models in the last three months that outperform the largest Llama 70B model and OpenAI GPT-3.5 that you can run for **FREE** on a recent vintage MacBook at 30 tok/s.  For many (most?) use cases, you can redirect your OpenAI spend.
 

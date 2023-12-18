@@ -136,8 +136,6 @@ _Transcription time_:
 
 `Apple M2 Max (12‑core CPU, 30‑core GPU, 16‑core Neural Engine), 64GB system memory, 1:33:14 meeting file`
 
-OpenAI also offers a Whisper API endpoint for $0.36/hour. 
-
 **Assembly.AI model**
 
 [Assembly.AI](https://www.assemblyai.com/) offers a paid API service ($0.65/hour) with higher-level abstractions like summarization, actions, speaker identification, and more - which means you can skip the next section.  [Example Python code](/assemblyAI.py).

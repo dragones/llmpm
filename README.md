@@ -55,7 +55,7 @@ Post-pandemic, most meetings are now recorded and all meeting vendors offer reco
 
 If your organization or vendor does not offer this capability, you can also transcribe every meeting today for free or nominal cost:
 
-**OpenAPI Whisper model**
+**OpenAI Whisper model**
 
 Apple earlier this month released GPU acceleration support for Whisper for recent vintage M-series MacBooks ([github](https://github.com/ml-explore/mlx)).  Using the Base model, GPU acceleration offered 2X speedup on a 90 minute meeting file (3 mins vs 7 mins transcription time). 
 
@@ -189,11 +189,11 @@ Depending on the length of the meeting, you need to think about LLM context wind
   </tr>
 </table>
 
-Here are example commands (if running LLM locally):
+Here are example prompts that work well (if running LLM locally):
 
-> `(echo [INST]Summarize the meeting notes in a single paragraph of approximately 100 words from this meeting transcript:; cat ../OpenAI\ Playground/transcripts/6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt | sed 's/   */ /'; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 2000`
+> `(echo [INST]Summarize the meeting notes in a single paragraph of approximately 100 words from this meeting transcript:; cat 6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 2000`
 
-> `(echo [INST]Please enumerate any actions from this meeting transcript:; cat 6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt | sed 's/   */ /'; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 1000`
+> `(echo [INST]Please enumerate any actions from this meeting transcript:; cat 6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 1000`
 
 Note that mistral LLMs require the prompt to be surrounded by `[INST]...[/INST]` text (HuggingFace [docs](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)).
 
@@ -203,15 +203,19 @@ Make meaning with a central vector store of embeddings.
 
 Vector databases differ from traditional databases by storing content according to the semantic meaning of the text vs. traditional object-relational mapping to SQL or JSON databases.
 
-Enterprise vendors like Google & Microsoft are adding semantic search across your cloud documents.  Salesforce just [announced](https://www.salesforce.com/news/press-releases/2023/12/14/unstructured-data-ai-search-einstein/) their Einstein Data Cloud Vector Database & Einstein Copilot Search which adds semantic search across your CRM data.
+Enterprise vendors like Google & Microsoft are adding semantic search across your cloud documents.  Salesforce just [announced](https://www.salesforce.com/news/press-releases/2023/12/14/unstructured-data-ai-search-einstein/) their Einstein Data Cloud Vector Database & Einstein Copilot Search which adds semantic search across your CRM & enterprise data.
 
-[Salesforce image]
+![Salesforce Retrieval Augmented Generation](/images/salesforce_rag.png)
 
-To take advantage, first you need to chunk the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers. 
+For PMs to take advantage, curate the most relevant digital documents.  It can be meeting transcripts, customer interviews, slack support channels, etc.   With a python script, you will need to extract the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers.  Some options to consider:
 
 **Chroma**
 
-Chroma is a database for building AI applications with embeddings. It comes with everything you need to get started built in, and runs on your machine.
+[Chroma](https://www.trychroma.com/) is a local vector database for building AI applications with embeddings. 
+
+> By default, Chroma uses the Sentence Transformers `all-MiniLM-L6-v2 model` to create embeddings. This embedding model can create sentence and document embeddings that can be used for a wide variety of tasks. This embedding function runs locally on your machine, and may require you download the model files (this will happen automatically). (from Chroma [docs](https://docs.trychroma.com/embeddings))
+
+ [LangChain](https://python.langchain.com/docs/integrations/vectorstores/chroma) also provides helpful python wrappers for managing loading of documents into Chroma.
 
 **OpenAI / Cohere**
 
@@ -220,3 +224,23 @@ Chroma is a database for building AI applications with embeddings. It comes with
 **Pinecone**
 
 [Pinecone](https://www.pinecone.io/) offers a hosted vector database endpoint for free for a single index and production instances for $0.096/hour + $0.025/GB/month.
+
+You can choose to store embeddings locally using Chroma or in the cloud with Pinecone or similar service.
+
+### Draft Everything
+
+Everything comes together through Retrieval Augmented Generation (RAG) where the most relevant documents and context from the vector store are combined with an LLM prompt to generate meaningful product deliverables.
+
+Here prompt templates are most helpful.  PM templates could include:
+
+* Drafting a PRD
+* Generating a JIRA ticket or Linear issue
+* Composing a product announcement press release
+* Summarizing team wins for the week
+* Summarizing the latest sprint demos
+* And more…
+
+This also suggests the biggest opportunity for UX innovation.  Product teams with LLMs are exposing the edges of the PM stack that established vendors and new entrants will rush to fill.  
+
+In the meantime, the best PMs will be LLM PMs.
+

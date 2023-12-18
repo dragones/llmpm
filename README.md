@@ -21,6 +21,8 @@ PMs need to skill up and get comfortable adding LLMs to your core workflows.  Th
 
 Be a LLM PM. 
 
+![LLM PM](/images/llmpm.png)
+
 ### LLMs at the Center
 
 I have spent the last decade of my career at leading product teams at enterprise SaaS companies like Salesforce and SAP SuccessFactors.  
@@ -29,7 +31,7 @@ IMO, the day-to-day “toolbelt” of a product leader has not changed much in t
 
 ### Why local LLMs?
 
-[Some are declaring the LLM wars “over”](https://www.theinformation.com/articles/the-next-ai-battle-adding-it-to-existing-products?shared=0e405a3210461d84), but for knowledge workers, increasingly powerful LLMs available on your Mac allows a PM to get all the benefits of ChatGPT without having to worry about sharing enterprise IP to other model providers. 
+[Some are declaring the LLM wars “over”](https://www.theinformation.com/articles/the-next-ai-battle-adding-it-to-existing-products?shared=0e405a3210461d84), but for knowledge workers, increasingly powerful LLMs available on your GPU’d Mac or PC allows a PM to get all the benefits of ChatGPT without having to worry about sharing enterprise IP to other model providers. 
 
 For example, [Mistral](https://mistral.ai/) has released 2 new models in the last three months that outperform the largest Llama 70B model and OpenAI GPT-3.5 that you can run for **FREE** on a recent vintage MacBook at 30 tok/s.  For many (most?) use cases, you can redirect your OpenAI spend.
 
@@ -69,7 +71,7 @@ Transcription time:
 
 <table>
   <tr>
-   <td>whisper
+   <td>model
    </td>
    <td>Real
    </td>
@@ -138,7 +140,7 @@ OpenAI also offers a Whisper API endpoint for $0.36/hour.
 
 **Assembly.AI model**
 
-Assembly.AI offers a paid API service ($0.65/hour) with higher-level abstractions like summarization, actions, speaker identification, and more - which means you can skip the next section. 
+[Assembly.AI](https://www.assemblyai.com/) offers a paid API service ($0.65/hour) with higher-level abstractions like summarization, actions, speaker identification, and more - which means you can skip the next section.  [Example Python code](/assemblyAI.py).
 
 ### Summarize & Action Everything
 
@@ -146,18 +148,75 @@ Now that you have transcribed everything, LLMs are the essential intelligence la
 
 Basic prompts with the transcript attached or embedded in the prompt do the trick:
 
+> `[INST]Please enumerate any actions from this meeting transcript: <transcript> [/INST]` (Mistral)
+
 > `Summarize the meeting notes in a single paragraph. Then write a markdown list of the speakers and each of their key points. Finally, list the next steps or action items suggested by the speakers, if any.`  (OpenAI Prompt Engineering [guide](https://platform.openai.com/docs/guides/prompt-engineering/strategy-write-clear-instructions))
 
 Depending on the length of the meeting, you need to think about LLM context windows. Here is a quick rule of thumb:
 
-* Typical size of 30 minute meeting (&lt;8k tokens) - Perfect for Mistral on device
-* Typical size of 60 minute meeting (>8k and &lt;16k tokens) - Perfect for Mixtral on device or GPT3.5
-* Typical size of 90+ minute meeting (>16k tokens) - GPT4-32k
+<table>
+  <tr>
+   <td>Length of Meeting
+   </td>
+   <td># tokens
+   </td>
+   <td>Recommended LLM
+   </td>
+  </tr>
+  <tr>
+   <td>30  minutes
+   </td>
+   <td>&lt;8k
+   </td>
+   <td>Mistral (local)
+   </td>
+  </tr>
+  <tr>
+   <td>60 minutes
+   </td>
+   <td>>8k and &lt;16k
+   </td>
+   <td>Mixtral (local) or GPT3.5-16k
+   </td>
+  </tr>
+  <tr>
+   <td>90+ minutes
+   </td>
+   <td>>16k tokens
+   </td>
+   <td>GPT4-32k
+   </td>
+  </tr>
+</table>
 
 Here are example commands (if running LLM locally):
 
-> `(echo [INST]Summarize the following text:; links -codepage utf-8 -force-html -width 500 -dump https://justine.lol/oneliners/ | sed 's/   */ /';   echo [/INST]; ) | ./mistral-7b-instruct-v0.1-Q4_K_M-main.llamafile -c 6700 -f /dev/stdin --temp 0 -n 500 --silent-prompt`
+> `(echo [INST]Summarize the meeting notes in a single paragraph of approximately 100 words from this meeting transcript:; cat ../OpenAI\ Playground/transcripts/6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt | sed 's/   */ /'; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 2000`
 
 > `(echo [INST]Please enumerate any actions from this meeting transcript:; cat 6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt | sed 's/   */ /'; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 1000`
 
 Note that mistral LLMs require the prompt to be surrounded by `[INST]...[/INST]` text (HuggingFace [docs](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)).
+
+### Embed Everything
+
+Make meaning with a central vector store of embeddings.  
+
+Vector databases differ from traditional databases by storing content according to the semantic meaning of the text vs. traditional object-relational mapping to SQL or JSON databases.
+
+Enterprise vendors like Google & Microsoft are adding semantic search across your cloud documents.  Salesforce just [announced](https://www.salesforce.com/news/press-releases/2023/12/14/unstructured-data-ai-search-einstein/) their Einstein Data Cloud Vector Database & Einstein Copilot Search which adds semantic search across your CRM data.
+
+[Salesforce image]
+
+To take advantage, first you need to chunk the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers. 
+
+**Chroma**
+
+Chroma is a database for building AI applications with embeddings. It comes with everything you need to get started built in, and runs on your machine.
+
+**OpenAI / Cohere**
+
+[OpenAI](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings) and [Cohere](https://cohere.com/embeddings) both offer embedding API endpoints for $0.0001/1K tokens and $0.10/1M tokens respectively.
+
+**Pinecone**
+
+[Pinecone](https://www.pinecone.io/) offers a hosted vector database endpoint for free for a single index and production instances for $0.096/hour + $0.025/GB/month.

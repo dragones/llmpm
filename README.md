@@ -1,6 +1,6 @@
 # LLMs for PMs (and other Knowledge Workers)
 
-**v0.1 (December 2023)**
+**v0.1 (December 2023)** - @dragones
 
 As product leaders, we are living in the golden age.
 

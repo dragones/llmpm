@@ -46,7 +46,7 @@ You can expect the performance improvements to compound as LLMs compete for mind
 
 ### How do I get started with local LLMs?
 
-[Llamafile](https://github.com/Mozilla-Ocho/llamafile) is the easiest way to run an LLM on your Mac or PC with a single file executable.  Includes support for Mistral 7B, Mixtral and LLaVA multi-modal.  Llamafile author Justine Tunney also wrote a very helpful bash command [blog](https://justine.lol/oneliners/).
+Mozilla's [Llamafile](https://github.com/Mozilla-Ocho/llamafile) is the easiest way to run an LLM on your Mac or PC with a single file executable.  Includes support for Mistral 7B, Mixtral and LLaVA multi-modal.  Llamafile author Justine Tunney also wrote a very helpful bash command [blog](https://justine.lol/oneliners/).
 
 [LM Studio](https://lmstudio.ai/) adds a UI with a chat interface with integrated LLM marketplace.
 
@@ -239,7 +239,7 @@ This also suggests the biggest opportunity for UX innovation.  Product teams wit
 
 ### What about ChatGPT Enterprise or GPTs?
 
-Many companies are customers of OpenAI’s ChatGPT Enterprise product which offers an encrypted playground for employees to access GPT4 with company data.  Also, OpenAI recently introduced GPT to facilitate simple prompt template creation with a low code editor.
+Many companies are customers of OpenAI’s ChatGPT Enterprise product which offers an encrypted playground for employees to access GPT4 with company data.  Also, OpenAI recently introduced GPTs to facilitate simple prompt template creation with a low code editor.
 
 If you have access through your company, absolutely take advantage.  
 

@@ -207,7 +207,7 @@ Enterprise vendors like Google & Microsoft are adding semantic search across you
 
 ![Salesforce Retrieval Augmented Generation](/images/salesforce_rag.png)
 
-For PMs to take advantage, first you need to chunk the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers. 
+For PMs to take advantage, curate the most relevant digital documents.  It can be meeting transcripts, customer interviews, slack support channels, etc.   With a python script, you will need to extract the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers.  Some options to consider:
 
 **Chroma**
 

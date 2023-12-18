@@ -152,6 +152,41 @@ Basic prompts with the transcript attached or embedded in the prompt do the tric
 
 Depending on the length of the meeting, you need to think about LLM context windows. Here is a quick rule of thumb:
 
+<table>
+  <tr>
+   <td>Length of Meeting
+   </td>
+   <td># tokens
+   </td>
+   <td>Recommended LLM
+   </td>
+  </tr>
+  <tr>
+   <td>30  minutes
+   </td>
+   <td>&lt;8k
+   </td>
+   <td>Mistral (local)
+   </td>
+  </tr>
+  <tr>
+   <td>60 minutes
+   </td>
+   <td>>8k and &lt;16k
+   </td>
+   <td>Mixtral (local) or GPT3.5-16k
+   </td>
+  </tr>
+  <tr>
+   <td>90+ minutes
+   </td>
+   <td>>16k tokens
+   </td>
+   <td>GPT4-32k
+   </td>
+  </tr>
+</table>
+
 * Typical size of 30 minute meeting (&lt;8k tokens) - Perfect for Mistral on device
 * Typical size of 60 minute meeting (>8k and &lt;16k tokens) - Perfect for Mixtral on device or GPT3.5
 * Typical size of 90+ minute meeting (>16k tokens) - GPT4-32k

@@ -45,19 +45,7 @@ You can expect the performance improvements to compound as LLMs compete for mind
 
 I have been fascinated by the intersection of the emergent capabilities of LLMs and the future of work. What if we pivoted core PM workflows to put a LLM at the center?  
 
-```mermaid
-flowchart LR
-    id1((Transcribe Everything))
-    id2(("Summarize &
-    Action Everything"))
-    id3((Embed Everything))
-    id4((Draft Everything))
-    id1 --> id2
-    id2 --> id3
-    id3 --> id4
-```
-
-For example:
+![LLM PM workflow image]("/images/llmpm_use_cases.png")
 
 ### Transcribe Everything
 

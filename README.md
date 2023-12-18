@@ -251,4 +251,6 @@ In 2024, the best product teams and best PMs will be picking off core use cases 
 
 Stay tuned for my journey here.  [**Please star this repository**](https://github.com/dragones/llmpm) if you are interested in following along.
 
-In the meantime, there is no better time to level-up your PM skills and productivty.  Be a LLM PM.
+In the meantime, there is no better time to level-up your PM skills and productivty.  
+
+Be a LLM PM.

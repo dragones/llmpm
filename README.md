@@ -35,6 +35,11 @@ IMO, the day-to-day “toolbelt” of a product leader has not changed much in t
 
 [Some are declaring the LLM wars “over”](https://www.theinformation.com/articles/the-next-ai-battle-adding-it-to-existing-products?shared=0e405a3210461d84), but for knowledge workers, increasingly powerful LLMs available on your GPU’d Mac or PC allows a PM to get all the benefits of ChatGPT without having to worry about sharing enterprise IP to other model providers. 
 
+Mozilla calls this [Local AI](https://future.mozilla.org/blog/introducing-llamafile/): 
+
+> Local AI is AI that runs on your own computer or device. Not in the cloud, or on someone else’s computer. Yours. This means it’s always available to you. You don’t need internet access to use a local AI. You can turn off your WiFi, and it will still work.
+> It also means the AI is fully under your control and that’s something no one can ever take away from you. No one else is listening in to your questions, or reading the AI’s answers. No one else can access your data. No one can change the AI’s behavior without your knowledge. The way the AI works now is the way it will always work.
+
 For example, [Mistral](https://mistral.ai/) has released 2 new models in the last three months that outperform the largest Llama 70B model and OpenAI GPT-3.5 that you can run for **FREE** on a recent vintage MacBook at 30 tok/s.  For many (most?) use cases, you can redirect your OpenAI spend.
 
 You can expect the performance improvements to compound as LLMs compete for mindshare and continue to push the performance envelope for edge devices. 

@@ -1,5 +1,7 @@
 # LLMs for PMs (and other Knowledge Workers)
 
+**v0.1 (December 2023)**
+
 As product leaders, we are living in the golden age.
 
 Large Language Models (LLMs) burst onto the scene one year ago with the launch of GPT3.5 / ChatGPT and now, within the last 6 months, we have multiple GPT3.5-class open-weight model LLMs.

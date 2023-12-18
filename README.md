@@ -191,7 +191,7 @@ Depending on the length of the meeting, you need to think about LLM context wind
 
 Here are example commands (if running LLM locally):
 
-> `(echo [INST]Summarize the following text:; links -codepage utf-8 -force-html -width 500 -dump https://justine.lol/oneliners/ | sed 's/   */ /';   echo [/INST]; ) | ./mistral-7b-instruct-v0.1-Q4_K_M-main.llamafile -c 6700 -f /dev/stdin --temp 0 -n 500 --silent-prompt`
+> `(echo [INST]Summarize the meeting notes in a single paragraph of approximately 100 words from this meeting transcript:; cat ../OpenAI\ Playground/transcripts/6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt | sed 's/   */ /'; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 2000`
 
 > `(echo [INST]Please enumerate any actions from this meeting transcript:; cat 6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt | sed 's/   */ /'; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 1000`
 

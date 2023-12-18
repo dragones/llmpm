@@ -4,7 +4,7 @@
 
 As product leaders, we are living in the golden age.
 
-Large Language Models (LLMs) burst onto the scene one year ago with the launch of GPT3.5 / ChatGPT and now, within the last 6 months, we have multiple GPT3.5-class open-weight model LLMs.
+Large Language Models (LLMs) burst onto the scene one year ago with the launch of GPT3.5 / ChatGPT.  Within the last 6 months, we now have multiple GPT3.5-class open-weight model LLMs.
 
 As a product leader, an essential tool to the modern PM is LLM skills.  As the number of LLMs evolves, you need to be thinking in multiples - the right LLM for the right job. Think less ChatGPT, more Mistral.  Think local versus cloud, augmented by your internal data.  Both for your products and your productivity. 
 

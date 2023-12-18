@@ -247,8 +247,8 @@ And as open-weight LLMs continue to accelerate, augmented by key business data v
 
 ### To be continued…
 
-In 2024, the best product teams and best PMs will be picking off core use cases like the ones above and automating key workflows.  Some have already [started](https://twitter.com/clairevo/status/1723370518227644437).
+In 2024, the best product teams and best PMs will be picking off core use cases like the ones above and automating key workflows with LLMs.  Some have already [started](https://twitter.com/clairevo/status/1723370518227644437).
 
 Stay tuned for my journey here.  [**Please star this repository**](https://github.com/dragones/llmpm) if you are interested in following along.
 
-In the meantime, there is no better time to level-up your PM skills and productivty.  Be an LLM PM.
+In the meantime, there is no better time to level-up your PM skills and productivty.  Be a LLM PM.

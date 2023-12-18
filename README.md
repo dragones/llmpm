@@ -229,7 +229,7 @@ You can choose to store embeddings locally using Chroma or in the cloud with Pin
 
 ### Draft Everything
 
-Everything comes together through Retrieval Augmented Generation (RAG) where the most relevant documents and context from the vector store are combined with an LLM prompt to generating meaningful product deliverables.
+Everything comes together through Retrieval Augmented Generation (RAG) where the most relevant documents and context from the vector store are combined with an LLM prompt to generate meaningful product deliverables.
 
 Here prompt templates are most helpful.  PM templates could include:
 
@@ -240,5 +240,7 @@ Here prompt templates are most helpful.  PM templates could include:
 * Summarizing the latest sprint demos
 * And more…
 
-This also suggests the biggest opportunity for UX innovation.  Product teams with LLMs are exposing the edges of the PM stack that established vendors and new entrants will rush to fill.  In the meantime, the best PMs will be LLM PMs.
+This also suggests the biggest opportunity for UX innovation.  Product teams with LLMs are exposing the edges of the PM stack that established vendors and new entrants will rush to fill.  
+
+In the meantime, the best PMs will be LLM PMs.
 

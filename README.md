@@ -237,6 +237,14 @@ Here prompt templates are most helpful.  PM templates could include:
 
 This also suggests the biggest opportunity for UX innovation.  Product teams with LLMs are exposing the edges of the PM stack that established vendors and new entrants will rush to fill.  
 
+### What about ChatGPT Enterprise or GPTs?
+
+Many companies are customers of OpenAI’s ChatGPT Enterprise product which offers an encrypted playground for employees to access GPT4 with company data.  Also, the recently introduced GPTs facilitate simple prompt template creation with a low code editor.
+
+If you have access through your company, absolutely take advantage.  
+
+And as open-weight LLMs continue to accelerate & augmented with key business data via embeddings, I expect more of the value-added productivity innovation to happen inside the enterprise vs. GPT-wrappers.  
+
 ### To be continued…
 
 In 2024, the best product teams and best PMs will be picking off core use cases like the ones above and automating key workflows.  Some have already [started](https://twitter.com/clairevo/status/1723370518227644437).

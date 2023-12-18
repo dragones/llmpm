@@ -215,7 +215,7 @@ For PMs to take advantage, curate the most relevant digital documents.  It can b
 
 > By default, Chroma uses the Sentence Transformers `all-MiniLM-L6-v2 model` to create embeddings. This embedding model can create sentence and document embeddings that can be used for a wide variety of tasks. This embedding function runs locally on your machine, and may require you download the model files (this will happen automatically). (from Chroma [docs](https://docs.trychroma.com/embeddings))
 
- [LangChain](https://python.langchain.com/docs/integrations/vectorstores/chroma) also provides helpful python wrappers for managing loading of documents into Chroma.  [Example Python code](https://github.com/dragones/llmpm/blob/main/embed.py) to load local ChromaDB with document and query.
+ [LangChain](https://python.langchain.com/docs/integrations/vectorstores/chroma) also provides helpful python wrappers for managing loading of documents into Chroma.  [Example Python code](https://github.com/dragones/llmpm/blob/main/embed.py) to load a local ChromaDB with documents and query.
 
 **OpenAI / Cohere**
 

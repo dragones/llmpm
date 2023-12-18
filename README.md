@@ -187,10 +187,6 @@ Depending on the length of the meeting, you need to think about LLM context wind
   </tr>
 </table>
 
-* Typical size of 30 minute meeting (&lt;8k tokens) - Perfect for Mistral on device
-* Typical size of 60 minute meeting (>8k and &lt;16k tokens) - Perfect for Mixtral on device or GPT3.5
-* Typical size of 90+ minute meeting (>16k tokens) - GPT4-32k
-
 Here are example commands (if running LLM locally):
 
 > `(echo [INST]Summarize the following text:; links -codepage utf-8 -force-html -width 500 -dump https://justine.lol/oneliners/ | sed 's/   */ /';   echo [/INST]; ) | ./mistral-7b-instruct-v0.1-Q4_K_M-main.llamafile -c 6700 -f /dev/stdin --temp 0 -n 500 --silent-prompt`

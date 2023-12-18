@@ -231,6 +231,6 @@ This also suggests the biggest opportunity for UX innovation.  Product teams wit
 
 In 2024, the best product teams and best PMs will be picking off core use cases like the ones above and automating key workflows.  Some have already [started](https://twitter.com/clairevo/status/1723370518227644437).
 
-Stay tuned for my journey here.  **Please star this repository** if you are interested in following along.
+Stay tuned for my journey here.  [**Please star this repository**](https://github.com/dragones/llmpm) if you are interested in following along.
 
 In the meantime, there is no better time to level-up your PM skills and productivty.  Be an LLM PM.

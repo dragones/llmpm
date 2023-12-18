@@ -205,7 +205,7 @@ Vector databases differ from traditional databases by storing content according 
 
 Enterprise vendors like Google & Microsoft are adding semantic search across your cloud documents.  Salesforce just [announced](https://www.salesforce.com/news/press-releases/2023/12/14/unstructured-data-ai-search-einstein/) their Einstein Data Cloud Vector Database & Einstein Copilot Search which adds semantic search across your CRM data.
 
-[Salesforce image]
+![Salesforce Retrieval Augmented Generation](/images/salesforce_rag.png)
 
 To take advantage, first you need to chunk the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers. 
 

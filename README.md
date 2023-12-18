@@ -196,23 +196,21 @@ Note that mistral LLMs require the prompt to be surrounded by `[INST]...[/INST]`
 
 ### Embed Everything
 
-Make meaning with a central vector store of embeddings.  
+Make meaning with a central vector store of embeddings.  Think of an embedding like a summary that captures the essence of complex data (like text or customer behavior) into a simpler form.
 
-Vector databases differ from traditional databases by storing content according to the semantic meaning of the text vs. traditional object-relational mapping to SQL or JSON databases.
+Vector databases differ from traditional databases by storing content embeddings according to the semantic meaning of the text vs. traditional object-relational mapping to SQL or JSON databases.
 
 Enterprise vendors like Google & Microsoft are adding semantic search across your cloud documents.  Salesforce just [announced](https://www.salesforce.com/news/press-releases/2023/12/14/unstructured-data-ai-search-einstein/) their Einstein Data Cloud Vector Database & Einstein Copilot Search which adds semantic search across your CRM & enterprise data.
 
 ![Salesforce Retrieval Augmented Generation](/images/salesforce_rag.png)
 
-For PMs to take advantage, curate the most relevant digital documents.  It can be meeting transcripts, customer interviews, slack support channels, etc.   With a python script, you will need to extract the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers.  Some options to consider:
+For PMs to take advantage, first curate your most relevant digital documents.  It can be meeting transcripts, customer interviews, slack support channels, etc.   Next, generate the embeddings with Chroma:
 
 **Chroma**
 
 [Chroma](https://www.trychroma.com/) is a local vector database for building AI applications with embeddings. 
 
-> By default, Chroma uses the Sentence Transformers `all-MiniLM-L6-v2 model` to create embeddings. This embedding model can create sentence and document embeddings that can be used for a wide variety of tasks. This embedding function runs locally on your machine, and may require you download the model files (this will happen automatically). (from Chroma [docs](https://docs.trychroma.com/embeddings))
-
- [LangChain](https://python.langchain.com/docs/integrations/vectorstores/chroma) also provides helpful python wrappers for managing loading of documents into Chroma.  [Example Python code](https://github.com/dragones/llmpm/blob/main/embed.py) to load a local ChromaDB with documents and query.
+[LangChain](https://python.langchain.com/docs/integrations/vectorstores/chroma) also provides helpful python wrappers for managing loading of documents into Chroma.  [Example Python code](https://github.com/dragones/llmpm/blob/main/embed.py) to load a local ChromaDB with documents and query.
 
 ### Draft Everything
 

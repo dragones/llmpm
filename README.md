@@ -209,10 +209,9 @@ Enterprise vendors like Google & Microsoft are adding semantic search across you
 
 To take advantage, first you need to chunk the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers. 
 
-> #### Generate Embeddings
-> Chroma is a database for building AI applications with embeddings. It comes with everything you need to get started built in, and runs on your machine.
-
 **Chroma**
+
+Chroma is a database for building AI applications with embeddings. It comes with everything you need to get started built in, and runs on your machine.
 
 **OpenAI / Cohere**
 

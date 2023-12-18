@@ -217,16 +217,6 @@ For PMs to take advantage, curate the most relevant digital documents.  It can b
 
  [LangChain](https://python.langchain.com/docs/integrations/vectorstores/chroma) also provides helpful python wrappers for managing loading of documents into Chroma.  [Example Python code](https://github.com/dragones/llmpm/blob/main/embed.py) to load a local ChromaDB with documents and query.
 
-**OpenAI / Cohere**
-
-[OpenAI](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings) and [Cohere](https://cohere.com/embeddings) both offer embedding API endpoints for $0.0001/1K tokens and $0.10/1M tokens respectively.
-
-**Pinecone**
-
-[Pinecone](https://www.pinecone.io/) offers a hosted vector database endpoint for free for a single index and production instances for $0.096/hour + $0.025/GB/month.
-
-You can choose to store embeddings locally using Chroma or in the cloud with Pinecone or similar service.
-
 ### Draft Everything
 
 Everything comes together through Retrieval Augmented Generation (RAG) where the most relevant documents and context from the vector store are combined with an LLM prompt to generate meaningful product deliverables.

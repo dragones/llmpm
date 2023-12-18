@@ -213,7 +213,9 @@ For PMs to take advantage, first you need to chunk the content into paragraphs a
 
 [Chroma](https://www.trychroma.com/) is a local vector database for building AI applications with embeddings. 
 
-By default, Chroma uses the Sentence Transformers all-MiniLM-L6-v2 model to create embeddings. This embedding model can create sentence and document embeddings that can be used for a wide variety of tasks. This embedding function runs locally on your machine, and may require you download the model files (this will happen automatically).
+By default, Chroma uses the Sentence Transformers `all-MiniLM-L6-v2 model` to create embeddings. This embedding model can create sentence and document embeddings that can be used for a wide variety of tasks. This embedding function runs locally on your machine, and may require you download the model files (this will happen automatically).
+
+ [LangChain](https://python.langchain.com/docs/integrations/vectorstores/chroma) also provides helpful python wrappers for managing loading of documents into Chroma.
 
 **OpenAI / Cohere**
 

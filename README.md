@@ -224,5 +224,10 @@ Here prompt templates are most helpful.  PM templates could include:
 
 This also suggests the biggest opportunity for UX innovation.  Product teams with LLMs are exposing the edges of the PM stack that established vendors and new entrants will rush to fill.  
 
-In the meantime, the best PMs will be LLM PMs.
+### To be continued…
 
+In 2024, the best product teams and best PMs will be picking off core use cases like the ones above and automating key workflows.  Some have already [started](https://twitter.com/clairevo/status/1723370518227644437).
+
+Stay tuned for my journey here.  Please star this repository if you are interested in following along.
+
+In the meantime, there is no better time to level-up your PM skills.  Be an LLM PM.

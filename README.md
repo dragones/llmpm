@@ -45,7 +45,7 @@ You can expect the performance improvements to compound as LLMs compete for mind
 
 I have been fascinated by the intersection of the emergent capabilities of LLMs and the future of work. What if we pivoted core PM workflows to put a LLM at the center?  
 
-![LLM PM workflow image]("/images/llmpm use cases.png")
+![LLM PM workflow image]("/images/llmpm_use_cases.png")
 
 ### Transcribe Everything
 

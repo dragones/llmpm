@@ -129,7 +129,7 @@ _Transcription time_:
   <tr>
    <td>Base (CPU)
    </td>
-   <td>244M
+   <td>74M
    </td>
    <td>
     <code>5m7.512s</code>

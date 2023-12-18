@@ -47,10 +47,13 @@ I have been fascinated by the intersection of the emergent capabilities of LLMs 
 
 ```mermaid
 flowchart LR
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+    id1((Transcribe Everything))
+    id2((Summarize & Action Everything))
+    id3((Embed Everything))
+    id4((Draft Everything))
+    id1 --> id2
+    id2 --> id3
+    id3 --> id4
 ```
 
 For example:

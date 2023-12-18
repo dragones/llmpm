@@ -71,7 +71,7 @@ Transcription time:
 
 <table>
   <tr>
-   <td>whisper
+   <td>model
    </td>
    <td>Real
    </td>

@@ -239,7 +239,7 @@ This also suggests the biggest opportunity for UX innovation.  Product teams wit
 
 ### What about ChatGPT Enterprise or GPTs?
 
-Many companies are customers of OpenAI’s ChatGPT Enterprise product which offers an encrypted playground for employees to access GPT4 with company data.  Also, OpenAI recently introduced GPTs facilitate simple prompt template creation with a low code editor.
+Many companies are customers of OpenAI’s ChatGPT Enterprise product which offers an encrypted playground for employees to access GPT4 with company data.  Also, OpenAI recently introduced GPT to facilitate simple prompt template creation with a low code editor.
 
 If you have access through your company, absolutely take advantage.  
 

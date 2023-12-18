@@ -148,7 +148,7 @@ Now that you have transcribed everything, LLMs are the essential intelligence la
 
 Basic prompts with the transcript attached or embedded in the prompt do the trick:
 
-> [INST]Please enumerate any actions from this meeting transcript: <transcript> [/INST]` (Mistral)
+> `[INST]Please enumerate any actions from this meeting transcript: <transcript> [/INST]` (Mistral)
 
 > `Summarize the meeting notes in a single paragraph. Then write a markdown list of the speakers and each of their key points. Finally, list the next steps or action items suggested by the speakers, if any.`  (OpenAI Prompt Engineering [guide](https://platform.openai.com/docs/guides/prompt-engineering/strategy-write-clear-instructions))
 

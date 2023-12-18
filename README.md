@@ -1,5 +1,7 @@
 # LLMs for PMs (and other Knowledge Workers)
 
+**v0.1 (December 2023)**
+
 As product leaders, we are living in the golden age.
 
 Large Language Models (LLMs) burst onto the scene one year ago with the launch of GPT3.5 / ChatGPT and now, within the last 6 months, we have multiple GPT3.5-class open-weight model LLMs.
@@ -57,7 +59,7 @@ If your organization or vendor does not offer this capability, you can also tran
 
 **OpenAI Whisper model**
 
-Apple earlier this month released GPU acceleration support for Whisper for recent vintage M-series MacBooks ([github](https://github.com/ml-explore/mlx)).  Using the Base model, GPU acceleration offered 2X speedup on a 90 minute meeting file (3 mins vs 7 mins transcription time). 
+Apple earlier this month released GPU acceleration support for Whisper for recent vintage M-series MacBooks ([github](https://github.com/ml-explore/mlx-examples)).  Using the Base model, GPU acceleration offered 2X speedup on a 90 minute meeting file (3 mins vs 7 mins transcription time). 
 
 ```python
 import whisper

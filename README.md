@@ -48,8 +48,8 @@ I have been fascinated by the intersection of the emergent capabilities of LLMs 
 ```mermaid
 flowchart LR
     id1((Transcribe Everything))
-    id2["`Summarize &
-    Action Everything`"]
+    id2(("Summarize &
+    Action Everything"))
     id3((Embed Everything))
     id4((Draft Everything))
     id1 --> id2

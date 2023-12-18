@@ -43,7 +43,21 @@ You can expect the performance improvements to compound as LLMs compete for mind
 
 ## Key Use Cases
 
-I have been fascinated by the intersection of the emergent capabilities of LLMs and the future of work. What if we pivoted core PM workflows to put a LLM at the center?  For example:
+I have been fascinated by the intersection of the emergent capabilities of LLMs and the future of work. What if we pivoted core PM workflows to put a LLM at the center?  
+
+```mermaid
+flowchart LR
+    id1((Transcribe Everything))
+    id2(("Summarize &
+    Action Everything"))
+    id3((Embed Everything))
+    id4((Draft Everything))
+    id1 --> id2
+    id2 --> id3
+    id3 --> id4
+```
+
+For example:
 
 ### Transcribe Everything
 
@@ -54,6 +68,14 @@ If your organization or vendor does not offer this capability, you can also tran
 **OpenAPI Whisper model**
 
 Apple earlier this month released GPU acceleration support for Whisper for recent vintage M-series MacBooks ([github](https://github.com/ml-explore/mlx)).  Using the Base model, GPU acceleration offered 2X speedup on a 90 minute meeting file (3 mins vs 7 mins transcription time). 
+
+```python
+import whisper
+
+audio_file = “NovemberBoardMeeting.m4a”
+result = whisper.transcribe(model="base", audio=audio_file, fp16=False)
+print(result["text"])
+```
 
 Transcription time:
 

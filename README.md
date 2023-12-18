@@ -140,7 +140,7 @@ OpenAI also offers a Whisper API endpoint for $0.36/hour.
 
 **Assembly.AI model**
 
-Assembly.AI offers a paid API service ($0.65/hour) with higher-level abstractions like summarization, actions, speaker identification, and more - which means you can skip the next section.  [Example Python code](/assemblyAI.py).
+[Assembly.AI](https://www.assemblyai.com/) offers a paid API service ($0.65/hour) with higher-level abstractions like summarization, actions, speaker identification, and more - which means you can skip the next section.  [Example Python code](/assemblyAI.py).
 
 ### Summarize & Action Everything
 

@@ -72,6 +72,8 @@ _Transcription time_:
   <tr>
    <td>model
    </td>
+   <td>Parameters
+   </td>
    <td>Real
    </td>
    <td>User
@@ -81,6 +83,8 @@ _Transcription time_:
   </tr>
   <tr>
    <td>Tiny (GPU)
+   </td>
+   <td>39M
    </td>
    <td>
     <code>2m8.623s</code>
@@ -95,6 +99,8 @@ _Transcription time_:
   <tr>
    <td>Base (GPU)
    </td>
+   <td>74M
+   </td>
    <td>
     <code>3m17.200s</code>
    </td>
@@ -108,6 +114,8 @@ _Transcription time_:
   <tr>
    <td>Small (GPU)
    </td>
+   <td>244M
+   </td>
    <td>
     <code>5m25.146s</code>
    </td>
@@ -120,6 +128,8 @@ _Transcription time_:
   </tr>
   <tr>
    <td>Base (CPU)
+   </td>
+   <td>244M
    </td>
    <td>
     <code>5m7.512s</code>

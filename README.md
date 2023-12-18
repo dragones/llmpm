@@ -47,20 +47,6 @@ I have been fascinated by the intersection of the emergent capabilities of LLMs 
 
 ![LLM PM workflow image](/images/llmpm.png)
 
-```mermaid
-flowchart LR
-    id1((Transcribe Everything))
-    id2(("Summarize &
-    Action Everything"))
-    id3((Embed Everything))
-    id4((Draft Everything))
-    id1 --> id2
-    id2 --> id3
-    id3 --> id4
-```
-
-For example:
-
 ### Transcribe Everything
 
 Post-pandemic, most meetings are now recorded and all meeting vendors offer recording downloads.  Many are adding AI transcription and summarization capability (for additional cost).  

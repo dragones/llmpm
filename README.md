@@ -243,7 +243,7 @@ Many companies are customers of OpenAI’s ChatGPT Enterprise product which offe
 
 If you have access through your company, absolutely take advantage.  
 
-And as open-weight LLMs continue to accelerate & augmented with key business data via embeddings, I expect more of the value-added productivity innovation to happen inside the enterprise vs. GPT-wrappers.  
+And as open-weight LLMs continue to accelerate, augmented by key business data via embeddings, I expect more of the value-added productivity innovation to happen inside the enterprise vs. GPT-wrappers.  
 
 ### To be continued…
 

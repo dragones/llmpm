@@ -59,7 +59,7 @@ If your organization or vendor does not offer this capability, you can also tran
 
 **OpenAI Whisper model**
 
-Apple earlier this month released GPU acceleration support for Whisper for recent vintage M-series MacBooks ([github](https://github.com/ml-explore/mlx](https://github.com/ml-explore/mlx-examples)).  Using the Base model, GPU acceleration offered 2X speedup on a 90 minute meeting file (3 mins vs 7 mins transcription time). 
+Apple earlier this month released GPU acceleration support for Whisper for recent vintage M-series MacBooks ([github](https://github.com/ml-explore/mlx-examples)).  Using the Base model, GPU acceleration offered 2X speedup on a 90 minute meeting file (3 mins vs 7 mins transcription time). 
 
 ```python
 import whisper

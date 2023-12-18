@@ -67,7 +67,7 @@ result = whisper.transcribe(model="base", audio=audio_file, fp16=False)
 print(result["text"])
 ```
 
-Transcription time:
+_Transcription time_:
 
 <table>
   <tr>

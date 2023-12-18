@@ -226,3 +226,19 @@ By default, Chroma uses the Sentence Transformers `all-MiniLM-L6-v2 model` to cr
 [Pinecone](https://www.pinecone.io/) offers a hosted vector database endpoint for free for a single index and production instances for $0.096/hour + $0.025/GB/month.
 
 You can choose to store embeddings locally using Chroma or in the cloud with Pinecone or similar service.
+
+### Draft Everything
+
+Everything comes together through Retrieval Augmented Generation (RAG) where the most relevant documents and context from the vector store are combined with an LLM prompt to generating meaningful product deliverables.
+
+Here prompt templates are most helpful.  PM templates could include:
+
+* Drafting a PRD
+* Generating a JIRA ticket or Linear issue
+* Composing a product announcement press release
+* Summarizing team wins for the week
+* Summarizing the latest sprint demos
+* And more…
+
+This also suggests the biggest opportunity for UX innovation.  Product teams with LLMs are exposing the edges of the PM stack that established vendors and new entrants will rush to fill.  In the meantime, the best PMs will be LLM PMs.
+

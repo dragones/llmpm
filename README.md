@@ -196,3 +196,29 @@ Here are example commands (if running LLM locally):
 > `(echo [INST]Please enumerate any actions from this meeting transcript:; cat 6vn84pv7wq-a7b6-4ff0-9939-ec8e22d16e8b.txt | sed 's/   */ /'; echo [/INST]; ) | ./mixtral-8x7b-instruct-v0.1.Q3_K_M.llamafile -f /dev/stdin --temp 0 -c 20000 --silent-prompt -n 1000`
 
 Note that mistral LLMs require the prompt to be surrounded by `[INST]...[/INST]` text (HuggingFace [docs](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)).
+
+### Embed Everything
+
+Make meaning with a central vector store of embeddings.  
+
+Vector databases differ from traditional databases by storing content according to the semantic meaning of the text vs. traditional object-relational mapping to SQL or JSON databases.
+
+Enterprise vendors like Google & Microsoft are adding semantic search across your cloud documents.  Salesforce just [announced](https://www.salesforce.com/news/press-releases/2023/12/14/unstructured-data-ai-search-einstein/) their Einstein Data Cloud Vector Database & Einstein Copilot Search which adds semantic search across your CRM data.
+
+[Salesforce image]
+
+To take advantage, first you need to chunk the content into paragraphs and generate “embeddings”.   Embeddings are the mathematical representation of the semantic meaning of the text. Think long sequences of decimal numbers. 
+
+#### Generate Embeddings
+
+Chroma is a database for building AI applications with embeddings. It comes with everything you need to get started built in, and runs on your machine.
+
+**Chroma**
+
+**OpenAI / Cohere**
+
+[OpenAI](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings) and [Cohere](https://cohere.com/embeddings) both offer embedding API endpoints for $0.0001/1K tokens and $0.10/1M tokens respectively.
+
+**Pinecone**
+
+[Pinecone](https://www.pinecone.io/) offers a hosted vector database endpoint for free for a single index and production instances for $0.096/hour + $0.025/GB/month.

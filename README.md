@@ -220,3 +220,5 @@ Chroma is a database for building AI applications with embeddings. It comes with
 **Pinecone**
 
 [Pinecone](https://www.pinecone.io/) offers a hosted vector database endpoint for free for a single index and production instances for $0.096/hour + $0.025/GB/month.
+
+You can choose to store embeddings locally using Chroma or in the cloud with Pinecone or similar service.

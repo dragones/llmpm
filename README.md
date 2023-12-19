@@ -1,4 +1,4 @@
-# LLMs for PMs
+# LLMs for PMs (and other Knowledge Workers)
 
 **v0.1 (December 2023)** - [@dragones](https://github.com/dragones)
 

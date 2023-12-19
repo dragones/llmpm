@@ -1,4 +1,4 @@
-# LLMs for PMs (and other Knowledge Workers)
+# LLMs for Product Managers (and other Knowledge Workers)
 
 **v0.1 (December 2023)** - [@dragones](https://github.com/dragones)
 

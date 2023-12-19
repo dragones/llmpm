@@ -15,7 +15,7 @@ Ask yourself: what if you had an AI teammate who with full access to your enterp
 * Search across your digital work life for most relevant context
 * Draft every PRD, blog post, or press release
 
-It would be revolutionary and 10X your impact.  Imagine reclaiming your calendar by having your AI “attend” meetings, capturing full detail at the highest fidelity. 
+It would be revolutionary and 10X your impact.  Imagine reclaiming your calendar by having your AI “attend” meetings, capturing full detail at the highest fidelity, that you can action later through summaries and speaker key points. 
 
 As a PM, you have access to this AI teammate **today**. As a PM leader, you can multiply the productivity of your team **today**.
 

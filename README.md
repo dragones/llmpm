@@ -208,7 +208,7 @@ Note that mistral LLMs require the prompt to be surrounded by `[INST]...[/INST]`
 
 Think of an embedding like a summary that captures the essence of complex data (like text or customer behavior) into a simpler form stored in a vector database.
 
-Vector databases differ from traditional databases by storing content embeddings according to the semantic meaning of the text vs. object-relational mapping in a SQL or JSON databases.
+Vector databases differ from traditional databases by storing content embeddings according to the semantic meaning of the text vs. object-relational mapping in SQL or JSON databases.
 
 Enterprise vendors like Google & Microsoft are adding semantic search across your cloud documents.  Salesforce just [announced](https://www.salesforce.com/news/press-releases/2023/12/14/unstructured-data-ai-search-einstein/) their Einstein Data Cloud Vector Database & Einstein Copilot Search which adds semantic search across your CRM & enterprise data.
 

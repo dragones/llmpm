@@ -214,13 +214,13 @@ Enterprise vendors like Google & Microsoft are adding semantic search across you
 
 ![Salesforce Retrieval Augmented Generation](/images/salesforce_rag.png)
 
-For PMs to take advantage, first curate your most relevant digital documents.  It can be meeting transcripts, customer interviews, slack support channels, etc.   Next, generate the embeddings with Chroma:
+For PMs to take advantage, first curate your most relevant digital documents.  It can be meeting transcripts, customer interviews, slack support channels, etc.   Next, generate the embeddings:
 
 **Chroma**
 
 [Chroma](https://www.trychroma.com/) is a local vector database for building AI applications with embeddings. 
 
-[LangChain](https://python.langchain.com/docs/integrations/vectorstores/chroma) also provides helpful python wrappers for managing loading of documents into Chroma.  [Example Python code](https://github.com/dragones/llmpm/blob/main/embed.py) to load a local ChromaDB with documents and query.
+[LangChain](https://python.langchain.com/docs/integrations/vectorstores/chroma) also provides helpful python wrappers for managing embeddings and loading of documents into Chroma.  [Example Python code](https://github.com/dragones/llmpm/blob/main/embed.py) to load a local ChromaDB with documents and query.
 
 ### Draft Everything
 

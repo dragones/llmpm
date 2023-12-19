@@ -206,7 +206,7 @@ Note that mistral LLMs require the prompt to be surrounded by `[INST]...[/INST]`
 
 ### Embed Everything
 
-Think of an embedding like a summary that captures the semantic essence of complex data (like text or customer behavior) into a simpler form.
+Think of an embedding like a summary that captures the essence of complex data (like text or customer behavior) into a simpler form stored in a vector database.
 
 Vector databases differ from traditional databases by storing content embeddings according to the semantic meaning of the text vs. traditional object-relational mapping to SQL or JSON databases.
 

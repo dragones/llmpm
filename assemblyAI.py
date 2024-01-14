@@ -35,7 +35,7 @@ def main():
     args = parser.parse_args()
 
     # check if config vars present
-    if not os.environ['ASSEMBLY_AI_API_KEY']:
+    if not os.environ['ASSEMBLYAI_API_KEY']:
         print('Please make sure all environment variables set')
         return
 

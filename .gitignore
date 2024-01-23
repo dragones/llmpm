@@ -2,3 +2,8 @@ archive
 transcripts
 .DS_Store
 .vscode
+chroma_db
+embed/bin
+embed/lib
+embed/share
+embed/pyvenv.cfg

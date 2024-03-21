@@ -39,8 +39,8 @@ def main():
     parser = argparse.ArgumentParser(description='Generate meeting transcript, summary, action items')
     parser.add_argument('-f', '--file', type=str, help='The file to process')
     parser.add_argument('-id', '--transcriptId', type=str, help='Assembly.AI transcriptId')
-    parser.add_argument('-s', '--summarize', action='store_true', help='Summarize the transcript')
-    parser.add_argument('-a', '--actionItems', action='store_true', help='Generate action items from the transcript')
+    parser.add_argument('-s', '--summarize', action='store_true', default=False, help='Summarize the transcript')
+    parser.add_argument('-a', '--actionItems', action='store_true', default=False, help='Generate action items from the transcript')
     parser.add_argument('-sp', '--speakerLabels', action='store_true', default=False, help='Include speaker labels in the transcript')
     args = parser.parse_args()
 
